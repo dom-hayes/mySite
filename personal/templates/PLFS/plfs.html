@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .zoom {
+          transition: transform .2s;
+        }
+        
+        .zoom:hover {
+          transform: scale(1.05);
+        }
+    </style>
+
+    <head>
+        <title>Premier League Football Shirts | Support your club in style for less!</title>
+    </head>
+    <body>
+        <div class="jumbotron text-center bg-white text-dark">
+            <img src= "{% static 'wide_logo.png' %}" alt="PLFS Logo">
+            <h1>Premier League Football Shirts</h1>
+            <p>Support your club in style for less!</p>
+          </div>
+          
+          <div class="container text-center bg-light text-dark">
+            <div class="row">
+                <div class="col-sm-6" style="padding:2%">
+                    <p></p>
+                </div>
+                <div class="col-sm-6" style="padding:2%">
+                    <p></p>
+                </div>
+              </div>
+            <div class="row">
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-arsenal.jpg' %}" alt="Arsenal" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Arsenal</h2>
+                    <h3>£69.99</h3>     
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-man_city.jpg' %}" alt="Manchester City" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Manchester City</h2>
+                    <h3>£69.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                <img src="{% static 'white-man_unt.jpg' %}" alt="Manchester United" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Manchester United</h2>
+                    <h3>£64.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-newcastle.jpg' %}" alt="Newcastle" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Newcastle</h2>
+                    <h3>£59.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-spurs.jpg' %}" alt="Tottenham" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Tottenham</h2>
+                    <h3>£69.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-brighton.jpg' %}" alt="Brighton" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Brighton</h2>
+                    <h3>£59.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-brentford.jpg' %}" alt="Brentford" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Brentford</h2>
+                    <h3>£59.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-fulham.jpg' %}" alt="Fulham" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Fulham</h2>
+                    <h3>£54.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-chelsea.jpg' %}" alt="Chelsea" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Chelsea</h2>
+                    <h3>£74.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="padding:2%">
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                    <img src="{% static 'white-liverpool.jpg' %}" alt="Liverpool" class = "img-thumbnail zoom" style="height:25vh">
+                    <h2>Liverpool</h2>
+                    <h3>£69.99</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="col-sm-4" style="padding:2%">
+                </div>
+              </div>
+          </div>
+        <div class="jumbotron text-center bg-white text-dark">
+            <div class="row">
+                <div class="col-sm-2" style="padding:4%"> 
+                </div>
+                <div class="col-sm-4" style="padding:4%">  
+                    <img src="{% static 'tall_logo.png' %}" alt="PLFS Logo">
+                </div>
+                <div class="col-sm-4" style="padding:4%">  
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputName">Name</label>
+                          <input type="text" class="form-control" placeholder="Enter your name here">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail">Email Address</label>
+                          <input type="email" class="form-control" placeholder="Enter your email here">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPhone">Phone Number</label>
+                          <input type="tel" class="form-control" placeholder="Enter your phone number here">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" placeholder="Enter your message here" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="col-sm-2" style="padding:2%"> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
